@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const assert = require('assert');
 const Record = require('../models/record.js')
 
@@ -30,3 +31,9 @@ const Record = require('../models/record.js')
   });
 
 }); // end of describe - eof
+=======
+// const assert = require('assert');
+//
+// describe('Record', function() {
+// };
+>>>>>>> develope
