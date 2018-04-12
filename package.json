@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Your task is to use JS TDD to model a Record Store.",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.0.5"
+  },
   "scripts": {
     "test": "mocha specs"
   },
@@ -16,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/strayllama/JS_record_Store_Git_Pair_practice/issues"
   },
-  "homepage": "https://github.com/strayllama/JS_record_Store_Git_Pair_practice#readme",
-  "dependencies": {
-    "mocha": "^5.0.5"
-  }
+  "homepage": "https://github.com/strayllama/JS_record_Store_Git_Pair_practice#readme"
 }

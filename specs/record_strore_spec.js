@@ -1,4 +1,2 @@
-const assert = require('asert');
+const assert = require('assert');
 const RecordStore = require('../models/record_store.js');
-
-describe 
