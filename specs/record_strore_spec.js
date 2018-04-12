@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-const assert = require('assert');
-const RecordStore = require('../models/record_store.js');
-=======
 const assert = require('assert')
 const RecordStore = require('../models/record_store.js')
 
@@ -34,4 +30,3 @@ describe('RecordStore', function() {
   });
 
 });
->>>>>>> develope
