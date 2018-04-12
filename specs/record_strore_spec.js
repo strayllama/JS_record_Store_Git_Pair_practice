@@ -44,6 +44,7 @@ describe('RecordStore', function() {
     assert.strictEqual(result, 3);
   })
 
+
   it ('should sellRecord', function(){
     record_store.inventory.push(record1);
     record_store.inventory.push(record2);
@@ -54,5 +55,13 @@ describe('RecordStore', function() {
     const result2 = record_store.balance;
     assert.strictEqual(result2, -150);
   })
+
+  it('should beable to get total price of all stock', function() {
+    record_store.inventory.push(record1);
+    record_store.inventory.push(record2);
+    record_store.inventory.push(record3);
+    const result = record_store.getStockValue();
+    assert.strictEqual(result, 500);
+  });
 
 });
