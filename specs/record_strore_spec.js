@@ -44,4 +44,15 @@ describe('RecordStore', function() {
     assert.strictEqual(result, 3);
   })
 
+  it ('should sellRecord', function(){
+    record_store.inventory.push(record1);
+    record_store.inventory.push(record2);
+    record_store.inventory.push(record3);
+    record_store.sellRecord(record2);
+    const result1 = record_store.inventory.length;
+    assert.strictEqual(result1, 2);
+    const result2 = record_store.balance;
+    assert.strictEqual(result2, -150);
+  })
+
 });

@@ -5,4 +5,10 @@ const RecordStore = function(name, city){
   this.balance = 0;
 }
 
+RecordStore.prototype.sellRecord = function(record){
+  indexToBeRemoved = this.inventory.indexOf(record);
+  this.inventory.splice(indexToBeRemoved, 1);
+  this.balance -= record.price;
+}
+
 module.exports = RecordStore;
